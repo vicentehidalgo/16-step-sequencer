@@ -49,9 +49,7 @@ void loop ()
 
 void lit_step(int step){
   for(int i = first_step_pin; i <= last_step_pin; i++){
-    if(i != step){
-      digitalWrite(i, LOW);
-    }
+    digitalWrite(i, LOW);
   }
   digitalWrite(step, HIGH);
 }
